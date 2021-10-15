@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 
 const MessageForm: React.FC = () => {
     const [inputText, setInputText] = useState<string>("");
 
-    const onInput = (event: React.ChangeEvent<HTMLInputElement>) => {
+    const onInput = (event: ChangeEvent<HTMLInputElement>) => {
         setInputText(event.target.value);
     };
 
